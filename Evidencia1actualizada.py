@@ -30,6 +30,7 @@ while True:
             if agregar == 'N':
                 iva = sum(cantidades) * .16
                 total_iva = sum(cantidades) + iva
+                print(f'El monto sin iva es: {sum(cantidades)}')
                 print(f'Total a pagar con iva: {total_iva}')
                 with open('ventas.csv','w',newline='') as archivo:
                     grabador = csv.writer(archivo)
